@@ -21,7 +21,7 @@ class HumanBrowser:
     ) -> None:
         """Type text with variations in typing speed and occasional errors."""
         # Click the entry box
-        await page.wait_for_selector(selector, state="visible", timeout=10000)
+        await page.wait_for_selector(selector, state="visible", timeout=100)
         await page.click(selector)
 
         async def press(char):
